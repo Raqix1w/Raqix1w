@@ -6,7 +6,7 @@ const initval = parseFloat(element.textContent.replace(/[^0-9.-]+/g,""));
 
 // Define the animation parameters
 const targetValue = 45000.00; // Target value with two decimal places
-const duration = 0; // 30 minutes in milliseconds
+const duration = 1; // 30 minutes in milliseconds
 
 // Calculate the animation step
 const step = (targetValue - initval) / duration;
