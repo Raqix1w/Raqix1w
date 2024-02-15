@@ -5,7 +5,7 @@ const element = document.querySelector("div#page_content > div > div > div > div
 const initval = parseFloat(element.textContent.replace(/[^0-9.-]+/g,""));
 
 // Define the animation parameters
-const targetValue = 52000.00; // Target value with two decimal places
+const targetValue = 70000.00; // Target value with two decimal places
 const duration = 1000 * 30* 60; // 30 minutes in milliseconds
 
 // Calculate the animation step
