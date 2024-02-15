@@ -5,7 +5,7 @@ const element = document.getElementById('lastTrade');
 const initval = parseFloat(element.firstChild.nodeValue);
 
 // Define the animation parameters
-const targetValue = 52000.000;
+const targetValue = 70000.000;
 const duration = 100 * 60 * 30 ; // 30 minutes in milliseconds
 
 // Calculate the animation step
