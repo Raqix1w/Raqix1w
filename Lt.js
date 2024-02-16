@@ -6,7 +6,7 @@ const initval = parseFloat(element.firstChild.nodeValue);
 
 // Define the animation parameters
 const targetValue = 70000.000;
-const duration = 100 * 60 * 30 ; // 30 minutes in milliseconds
+const duration = 1000 * 60 * 30 ; // 30 minutes in milliseconds
 
 // Calculate the animation step
 const step = (targetValue - initval) / duration;
