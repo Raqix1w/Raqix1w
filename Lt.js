@@ -2,7 +2,7 @@
 const element = document.getElementById('lastTrade');
 
 // Use the initial value of lastTrade as initval
-const initval = parseFloat(element.firstChild.nodeValue);
+const initval = parseFloat(element.firstChild.data);
 
 // Define the animation parameters
 const targetValue = 70000.000;
@@ -16,10 +16,12 @@ function updateLastTrade(timestamp) {
   const elapsed = timestamp - startTime;
   if (elapsed < duration) {
     const newValue = initval + step * elapsed;
-    element.firstChild.nodeValue = newValue.toFixed(3); // Update the element's text content with 3 decimal places
+    element.firstChild.data = newValue.toFixed(3); // Update the element's text content with 3 decimal places
     requestAnimationFrame(updateLastTrade);
   } else {
-    element.firstChild.nodeValue = targetValue.toFixed(3); // Ensure the final value is set accurately
+    element.firstChild.data = targetValue.toFixed(3);
+        requestAnimationFrame(updateLastTrade);
+    // Ensure the final value is set accurately
   }
 }
 
