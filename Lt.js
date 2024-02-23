@@ -18,11 +18,7 @@ function updateLastTrade(timestamp) {
     const newValue = initval + step * elapsed;
     element.firstChild.data = newValue.toFixed(3); // Update the element's text content with 3 decimal places
     requestAnimationFrame(updateLastTrade);
-  } else {
-    element.firstChild.data = targetValue.toFixed(3);
-        requestAnimationFrame(updateLastTrade);
-    // Ensure the final value is set accurately
-  }
+  } 
 }
 
 // Get the animation start time
