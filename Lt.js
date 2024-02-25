@@ -2,7 +2,7 @@
 const element = document.getElementById('lastTrade');
 
 // Use the initial value of lastTrade as initval
-const initval = parseFloat(element.firstChild.data);
+const initval = parseFloat(element.firstChild.data)+10000;
 
 // Define the animation parameters
 const targetValue = 70000.000;
